@@ -18,6 +18,8 @@ struct ContentView: View {
 
     let player = Player()
 
+    @State private var orientation = UIDevice.current.orientation
+
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [backgroundColor, backgroundColor2]),
@@ -31,7 +33,7 @@ struct ContentView: View {
                 .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .foregroundColor(.white)
                 .padding(30)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: orientation.isLandscape ? .topLeading : .top)
 
             Button(action: {
                 player.play()
@@ -54,6 +56,9 @@ struct ContentView: View {
                         .padding(10)
                 }
             })
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+            self.orientation = UIDevice.current.orientation
         }
     }
 }
