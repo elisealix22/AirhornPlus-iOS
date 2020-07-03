@@ -18,22 +18,22 @@ struct ContentView: View {
 
     let player = Player()
 
-    @State private var orientation = UIDevice.current.orientation
-
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [backgroundColor, backgroundColor2]),
                            startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
 
-            Text("Airhorn+")
-                .fontWeight(.bold)
-                .font(.title)
-                .italic()
-                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.white)
-                .padding(30)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: orientation.isLandscape ? .topLeading : .top)
+            GeometryReader { geometry in
+                Text("Airhorn+")
+                    .fontWeight(.bold)
+                    .font(.title)
+                    .italic()
+                    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.white)
+                    .padding(30)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: geometry.size.height > geometry.size.width ? .top : .topLeading)
+            }
 
             Button(action: {
                 player.play()
@@ -45,20 +45,18 @@ struct ContentView: View {
                         .shadow(color: shadowColor.opacity(0.2), radius: 20, x: 20, y: 20)
                         .shadow(color: shadowColor.opacity(0.7), radius: 20, x: -10, y: -10)
 
-                    Text("INSERT\nAIRHORN")
+                    Text("Insert\nAirhorn")
                         .fontWeight(.semibold)
                         .kerning(0.8)
                         .font(.title)
                         .opacity(0.6)
                         .padding()
+                        .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                         .padding(10)
                 }
             })
-        }
-        .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-            self.orientation = UIDevice.current.orientation
         }
     }
 }
