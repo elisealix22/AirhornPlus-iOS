@@ -5,21 +5,23 @@
 //  Created by Elise Alix on 7/2/20.
 //
 
+import SwiftUI
 import AVFoundation
 
-class Player {
+struct Player {
 
-    let url = URL(fileURLWithPath: Bundle.main.path(forResource: "airhorn.mp3", ofType: nil) ?? "")
+    private let url = URL(fileURLWithPath: Bundle.main.path(forResource: "airhorn.mp3", ofType: nil) ?? "")
 
-    var airhorn1: AVAudioPlayer?
-    var airhorn2: AVAudioPlayer?
-    var airhorn3: AVAudioPlayer?
-    var airhorn4: AVAudioPlayer?
-    var airhorn5: AVAudioPlayer?
-    var airhorn6: AVAudioPlayer?
+    private var airhorn1: AVAudioPlayer?
+    private var airhorn2: AVAudioPlayer?
+    private var airhorn3: AVAudioPlayer?
+    private var airhorn4: AVAudioPlayer?
+    private var airhorn5: AVAudioPlayer?
+    private var airhorn6: AVAudioPlayer?
 
-    var players: Array<AVAudioPlayer?> = []
-    var lastPlayed = 0
+    private var players: Array<AVAudioPlayer?> = []
+
+    @State private var lastPlayed = 0
 
     init() {
         do {
@@ -50,7 +52,6 @@ class Player {
 
             if (player?.isPlaying != true) {
                 player?.play()
-                print(lastPlayed)
                 lastPlayed = next
                 break
             }
