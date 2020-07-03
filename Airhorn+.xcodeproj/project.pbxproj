@@ -7,23 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6ADD610E24AE4FA10009E484 /* AirHorn_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD60FB24AE4FA00009E484 /* AirHorn_App.swift */; };
-		6ADD610F24AE4FA10009E484 /* AirHorn_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD60FB24AE4FA00009E484 /* AirHorn_App.swift */; };
+		6ADD610E24AE4FA10009E484 /* Airhorn_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD60FB24AE4FA00009E484 /* Airhorn_App.swift */; };
+		6ADD610F24AE4FA10009E484 /* Airhorn_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD60FB24AE4FA00009E484 /* Airhorn_App.swift */; };
 		6ADD611024AE4FA10009E484 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD60FC24AE4FA00009E484 /* ContentView.swift */; };
 		6ADD611124AE4FA10009E484 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD60FC24AE4FA00009E484 /* ContentView.swift */; };
 		6ADD611224AE4FA10009E484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADD60FD24AE4FA10009E484 /* Assets.xcassets */; };
 		6ADD611324AE4FA10009E484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADD60FD24AE4FA10009E484 /* Assets.xcassets */; };
+		6ADD611D24AEA84A0009E484 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD611C24AEA84A0009E484 /* Player.swift */; };
+		6ADD611E24AEA84A0009E484 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD611C24AEA84A0009E484 /* Player.swift */; };
+		6ADD612124AEB9CD0009E484 /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6ADD612024AEB9CD0009E484 /* airhorn.mp3 */; };
+		6ADD612224AEB9CD0009E484 /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6ADD612024AEB9CD0009E484 /* airhorn.mp3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6A406C5824AEC612007F6648 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		6ADD60FB24AE4FA00009E484 /* AirHorn_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirHorn_App.swift; sourceTree = "<group>"; };
+		6A406C4524AEC611007F6648 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6A406C4724AEC611007F6648 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6ADD60FB24AE4FA00009E484 /* Airhorn_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airhorn_App.swift; sourceTree = "<group>"; };
 		6ADD60FC24AE4FA00009E484 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6ADD60FD24AE4FA10009E484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6ADD610224AE4FA10009E484 /* AirHorn+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirHorn+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADD610224AE4FA10009E484 /* Airhorn+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airhorn+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADD610524AE4FA10009E484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6ADD610A24AE4FA10009E484 /* AirHorn+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirHorn+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADD610A24AE4FA10009E484 /* Airhorn+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airhorn+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADD610C24AE4FA10009E484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ADD610D24AE4FA10009E484 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		6ADD611C24AEA84A0009E484 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6ADD612024AEB9CD0009E484 /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = airhorn.mp3; path = ../../../../../../Downloads/airhorn.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A406C4424AEC611007F6648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A406C4524AEC611007F6648 /* WidgetKit.framework */,
+				6A406C4724AEC611007F6648 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6ADD60F524AE4FA00009E484 = {
 			isa = PBXGroup;
 			children = (
 				6ADD60FA24AE4FA00009E484 /* Shared */,
 				6ADD610424AE4FA10009E484 /* iOS */,
 				6ADD610B24AE4FA10009E484 /* macOS */,
+				6A406C4424AEC611007F6648 /* Frameworks */,
 				6ADD610324AE4FA10009E484 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,9 +88,11 @@
 		6ADD60FA24AE4FA00009E484 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				6ADD60FB24AE4FA00009E484 /* AirHorn_App.swift */,
+				6ADD611F24AEB9B10009E484 /* Sounds */,
+				6ADD60FB24AE4FA00009E484 /* Airhorn_App.swift */,
 				6ADD60FC24AE4FA00009E484 /* ContentView.swift */,
 				6ADD60FD24AE4FA10009E484 /* Assets.xcassets */,
+				6ADD611C24AEA84A0009E484 /* Player.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -67,8 +100,8 @@
 		6ADD610324AE4FA10009E484 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6ADD610224AE4FA10009E484 /* AirHorn+.app */,
-				6ADD610A24AE4FA10009E484 /* AirHorn+.app */,
+				6ADD610224AE4FA10009E484 /* Airhorn+.app */,
+				6ADD610A24AE4FA10009E484 /* Airhorn+.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +123,14 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		6ADD611F24AEB9B10009E484 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6ADD612024AEB9CD0009E484 /* airhorn.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +141,7 @@
 				6ADD60FE24AE4FA10009E484 /* Sources */,
 				6ADD60FF24AE4FA10009E484 /* Frameworks */,
 				6ADD610024AE4FA10009E484 /* Resources */,
+				6A406C5824AEC612007F6648 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -107,7 +149,7 @@
 			);
 			name = iOS;
 			productName = iOS;
-			productReference = 6ADD610224AE4FA10009E484 /* AirHorn+.app */;
+			productReference = 6ADD610224AE4FA10009E484 /* Airhorn+.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6ADD610924AE4FA10009E484 /* macOS */ = {
@@ -124,7 +166,7 @@
 			);
 			name = macOS;
 			productName = macOS;
-			productReference = 6ADD610A24AE4FA10009E484 /* AirHorn+.app */;
+			productReference = 6ADD610A24AE4FA10009E484 /* Airhorn+.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "AirHorn+" */;
+			buildConfigurationList = 6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "Airhorn+" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADD612124AEB9CD0009E484 /* airhorn.mp3 in Resources */,
 				6ADD611224AE4FA10009E484 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADD612224AEB9CD0009E484 /* airhorn.mp3 in Resources */,
 				6ADD611324AE4FA10009E484 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,7 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADD611024AE4FA10009E484 /* ContentView.swift in Sources */,
-				6ADD610E24AE4FA10009E484 /* AirHorn_App.swift in Sources */,
+				6ADD611D24AEA84A0009E484 /* Player.swift in Sources */,
+				6ADD610E24AE4FA10009E484 /* Airhorn_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADD611124AE4FA10009E484 /* ContentView.swift in Sources */,
-				6ADD610F24AE4FA10009E484 /* AirHorn_App.swift in Sources */,
+				6ADD611E24AEA84A0009E484 /* Player.swift in Sources */,
+				6ADD610F24AE4FA10009E484 /* Airhorn_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 847V5P4PY4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -328,8 +375,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elisemurray.AirHornPlus.AirHorn-";
-				PRODUCT_NAME = "AirHorn+";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elisemurray.AirHornPlus;
+				PRODUCT_NAME = "Airhorn+";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 847V5P4PY4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -349,8 +397,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elisemurray.AirHornPlus.AirHorn-";
-				PRODUCT_NAME = "AirHorn+";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elisemurray.AirHornPlus;
+				PRODUCT_NAME = "Airhorn+";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +422,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elisemurray.AirHornPlus.AirHorn-";
-				PRODUCT_NAME = "AirHorn+";
+				PRODUCT_NAME = "Airhorn+";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -396,7 +444,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elisemurray.AirHornPlus.AirHorn-";
-				PRODUCT_NAME = "AirHorn+";
+				PRODUCT_NAME = "Airhorn+";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -405,7 +453,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "AirHorn+" */ = {
+		6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "Airhorn+" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6ADD611424AE4FA10009E484 /* Debug */,
