@@ -64,9 +64,9 @@
 		6ADD60FB24AE4FA00009E484 /* Airhorn_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airhorn_App.swift; sourceTree = "<group>"; };
 		6ADD60FC24AE4FA00009E484 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6ADD60FD24AE4FA10009E484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6ADD610224AE4FA10009E484 /* Airhorn+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airhorn+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADD610224AE4FA10009E484 /* AirhornPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirhornPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADD610524AE4FA10009E484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6ADD610A24AE4FA10009E484 /* Airhorn+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airhorn+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADD610A24AE4FA10009E484 /* AirhornPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirhornPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADD610C24AE4FA10009E484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ADD610D24AE4FA10009E484 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		6ADD611C24AEA84A0009E484 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -144,8 +144,8 @@
 		6ADD610324AE4FA10009E484 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6ADD610224AE4FA10009E484 /* Airhorn+.app */,
-				6ADD610A24AE4FA10009E484 /* Airhorn+.app */,
+				6ADD610224AE4FA10009E484 /* AirhornPlus.app */,
+				6ADD610A24AE4FA10009E484 /* AirhornPlus.app */,
 				6A8D6C9F24AFC0CD00752A8A /* AirhornWidgetExtension.appex */,
 			);
 			name = Products;
@@ -215,7 +215,7 @@
 			);
 			name = iOS;
 			productName = iOS;
-			productReference = 6ADD610224AE4FA10009E484 /* Airhorn+.app */;
+			productReference = 6ADD610224AE4FA10009E484 /* AirhornPlus.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6ADD610924AE4FA10009E484 /* macOS */ = {
@@ -232,7 +232,7 @@
 			);
 			name = macOS;
 			productName = macOS;
-			productReference = 6ADD610A24AE4FA10009E484 /* Airhorn+.app */;
+			productReference = 6ADD610A24AE4FA10009E484 /* AirhornPlus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "Airhorn+" */;
+			buildConfigurationList = 6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "AirhornPlus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -530,7 +530,7 @@
 				);
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elisemurray.AirhornPlus;
-				PRODUCT_NAME = "Airhorn+";
+				PRODUCT_NAME = AirhornPlus;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -557,7 +557,7 @@
 				);
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elisemurray.AirhornPlus;
-				PRODUCT_NAME = "Airhorn+";
+				PRODUCT_NAME = AirhornPlus;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -584,7 +584,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elisemurray.AirhornPlus.Mac;
-				PRODUCT_NAME = "Airhorn+";
+				PRODUCT_NAME = AirhornPlus;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -608,7 +608,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elisemurray.AirhornPlus.Mac;
-				PRODUCT_NAME = "Airhorn+";
+				PRODUCT_NAME = AirhornPlus;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -626,7 +626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "Airhorn+" */ = {
+		6ADD60F924AE4FA00009E484 /* Build configuration list for PBXProject "AirhornPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6ADD611424AE4FA10009E484 /* Debug */,
