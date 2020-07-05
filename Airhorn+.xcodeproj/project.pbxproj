@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0B4D6924B2281F004FD583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADD60FD24AE4FA10009E484 /* Assets.xcassets */; };
+		6A0C454D24B22A9000B09672 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C454C24B22A9000B09672 /* Color+Extension.swift */; };
+		6A0C454E24B22A9000B09672 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C454C24B22A9000B09672 /* Color+Extension.swift */; };
+		6A0C454F24B22A9000B09672 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C454C24B22A9000B09672 /* Color+Extension.swift */; };
 		6A8D6CA024AFC0CD00752A8A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A406C4524AEC611007F6648 /* WidgetKit.framework */; };
 		6A8D6CA124AFC0CD00752A8A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A406C4724AEC611007F6648 /* SwiftUI.framework */; };
 		6A8D6CA424AFC0CD00752A8A /* AirhornWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8D6CA324AFC0CD00752A8A /* AirhornWidget.swift */; };
@@ -49,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A0C454C24B22A9000B09672 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		6A406C4524AEC611007F6648 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6A406C4724AEC611007F6648 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		6A8D6C9F24AFC0CD00752A8A /* AirhornWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AirhornWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,10 +133,9 @@
 		6ADD60FA24AE4FA00009E484 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				6ADD611F24AEB9B10009E484 /* Sounds */,
+				6ADD611F24AEB9B10009E484 /* Resources */,
 				6ADD60FB24AE4FA00009E484 /* Airhorn_App.swift */,
 				6ADD60FC24AE4FA00009E484 /* ContentView.swift */,
-				6ADD60FD24AE4FA10009E484 /* Assets.xcassets */,
 				6ADD611C24AEA84A0009E484 /* Player.swift */,
 			);
 			path = Shared;
@@ -140,8 +144,8 @@
 		6ADD610324AE4FA10009E484 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-                6ADD610224AE4FA10009E484 /* Airhorn+.app */,
-                6ADD610A24AE4FA10009E484 /* Airhorn+.app */,
+				6ADD610224AE4FA10009E484 /* Airhorn+.app */,
+				6ADD610A24AE4FA10009E484 /* Airhorn+.app */,
 				6A8D6C9F24AFC0CD00752A8A /* AirhornWidgetExtension.appex */,
 			);
 			name = Products;
@@ -164,12 +168,14 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		6ADD611F24AEB9B10009E484 /* Sounds */ = {
+		6ADD611F24AEB9B10009E484 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6ADD60FD24AE4FA10009E484 /* Assets.xcassets */,
+				6A0C454C24B22A9000B09672 /* Color+Extension.swift */,
 				6ADD612024AEB9CD0009E484 /* airhorn.mp3 */,
 			);
-			path = Sounds;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0B4D6924B2281F004FD583 /* Assets.xcassets in Resources */,
 				6A8D6CA624AFC0CE00752A8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8D6CA424AFC0CD00752A8A /* AirhornWidget.swift in Sources */,
+				6A0C454F24B22A9000B09672 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADD611024AE4FA10009E484 /* ContentView.swift in Sources */,
+				6A0C454D24B22A9000B09672 /* Color+Extension.swift in Sources */,
 				6ADD611D24AEA84A0009E484 /* Player.swift in Sources */,
 				6ADD610E24AE4FA10009E484 /* Airhorn_App.swift in Sources */,
 			);
@@ -321,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADD611124AE4FA10009E484 /* ContentView.swift in Sources */,
+				6A0C454E24B22A9000B09672 /* Color+Extension.swift in Sources */,
 				6ADD611E24AEA84A0009E484 /* Player.swift in Sources */,
 				6ADD610F24AE4FA10009E484 /* Airhorn_App.swift in Sources */,
 			);

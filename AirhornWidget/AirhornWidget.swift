@@ -35,14 +35,9 @@ struct PlaceholderView : View {
 struct AirhornWidgetEntryView : View {
     var entry: Provider.Entry
 
-    let backgroundColor = Color(red: 0 / 255, green: 5 / 255, blue: 77 / 255)
-    let backgroundColor2 = Color(red: 92 / 255, green: 139 / 255, blue: 169 / 255)
-    let shadowColor = Color(red: 3 / 255, green: 3 / 255, blue: 26 / 255)
-    let buttonColor = Color(red: 232 / 255, green: 82 / 255, blue: 39 / 255)
-
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [backgroundColor, backgroundColor2]),
+            LinearGradient(gradient: Gradient(colors: [.darkBlue, .lightBlue]),
                            startPoint: .top, endPoint: .bottom)
 
             GeometryReader { geometry in
@@ -50,9 +45,9 @@ struct AirhornWidgetEntryView : View {
                 ZStack {
                     Circle()
                         .frame(width: buttonSize, height: buttonSize, alignment: .center)
-                        .foregroundColor(buttonColor)
-                        .shadow(color: shadowColor.opacity(0.2), radius: 10, x: 10, y: 10)
-                        .shadow(color: shadowColor.opacity(0.7), radius: 10, x: -5, y: -5)
+                        .foregroundColor(.orange)
+                        .shadow(color: Color.shadow.opacity(0.2), radius: 10, x: 10, y: 10)
+                        .shadow(color: Color.shadow.opacity(0.7), radius: 10, x: -5, y: -5)
 
                     Text("Insert\nAirhorn")
                         .fontWeight(.semibold)
