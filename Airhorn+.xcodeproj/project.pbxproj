@@ -137,7 +137,6 @@
 				6ADD60FB24AE4FA00009E484 /* Airhorn_App.swift */,
 				6ADD60FC24AE4FA00009E484 /* ContentView.swift */,
 				6ADD611C24AEA84A0009E484 /* Player.swift */,
-				6A35C9D824B27DFE00C6988C /* LaunchScreen.storyboard */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 		6ADD611F24AEB9B10009E484 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6A35C9D824B27DFE00C6988C /* LaunchScreen.storyboard */,
 				6ADD60FD24AE4FA10009E484 /* Assets.xcassets */,
 				6A0C454C24B22A9000B09672 /* Color+Extension.swift */,
 				6ADD612024AEB9CD0009E484 /* airhorn.mp3 */,
