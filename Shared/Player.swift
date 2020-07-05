@@ -40,8 +40,15 @@ struct Player {
             airhorn6?.prepareToPlay()
 
             players = [airhorn1, airhorn2, airhorn3, airhorn4, airhorn5, airhorn6]
+
         } catch {
             // Couldn't find file
+        }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+        } catch {
+            // Couldn't override silent mode
         }
     }
 
