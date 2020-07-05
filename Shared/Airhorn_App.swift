@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Airhorn_App: App {
+
+    @State var forcePlay: Bool = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(forcePlay: $forcePlay)
+                .onOpenURL { (url) in
+                    self.forcePlay = url.absoluteString == "airhornplus://play"
+                }
         }
     }
 }

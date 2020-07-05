@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
 
-    let buttonSize: CGFloat = 270
-
+    @Binding var forcePlay: Bool
     let player = Player()
+    let buttonSize: CGFloat = 270
 
     var body: some View {
         ZStack {
@@ -52,12 +52,31 @@ struct ContentView: View {
                         .padding(10)
                 }
             })
+        }.onChange(of: forcePlay) { (force) in
+            #if DEBUG
+            print("forcePlay changed: \(force)")
+            #endif
+
+            if (force) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    player.play()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        player.play()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                            player.play()
+                        }
+                    }
+                }
+                self.forcePlay = false
+            }
         }
     }
 }
 
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(forcePlay: .constant(false))
     }
 }
+#endif

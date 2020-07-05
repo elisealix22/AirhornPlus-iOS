@@ -62,7 +62,7 @@ struct AirhornWidgetEntryView : View {
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
-        }
+        }.widgetURL(URL(string: "airhornplus://play"))
     }
 }
 
