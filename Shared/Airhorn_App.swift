@@ -15,8 +15,8 @@ struct Airhorn_App: App {
     var body: some Scene {
         WindowGroup {
             ContentView(forcePlay: $forcePlay)
-                .onOpenURL { (url) in
-                    self.forcePlay = url.absoluteString == "airhornplus://play"
+                .onOpenURL { url in
+                    self.forcePlay = url.host == "play"
                 }
         }
     }
